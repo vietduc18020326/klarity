@@ -1,15 +1,15 @@
+import { CustomLayout } from "@/layouts";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { IBM_Plex_Sans } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
+import "./variables.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  variable: "--font-ibm-plex-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -23,11 +23,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" className={`${ibmPlexSans.className} mdl-js`}>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <body className="antialiased">
+        <CustomLayout>{children}</CustomLayout>
       </body>
     </html>
   );
