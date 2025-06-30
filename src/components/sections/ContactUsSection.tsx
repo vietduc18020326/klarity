@@ -1,7 +1,7 @@
 "use client";
 
 import { IMAGE_BUILDING_5 } from "@/assets";
-import { UIInput } from "@/components";
+import { UIButton, UIInput } from "@/components";
 import { memo } from "react";
 import { useForm } from "react-hook-form";
 
@@ -30,8 +30,8 @@ export const ContactUsSection = memo(function ContactUsSection() {
         className="w-content p-xl rounded-[16px] flex items-start bg-cover bg-center"
         style={{ backgroundImage: `url(${IMAGE_BUILDING_5})` }}
       >
-        <div className="rounded-[20px] border border-secondary-25 bg-white/80 backdrop-blur-[20px] p-l flex flex-col gap-2xl items-start w-[706px]">
-          <span className="h2-6 text-brand-600">
+        <div className="rounded-[20px] border border-secondary-25 bg-white/80 backdrop-blur-[20px] p-l flex flex-col gap-2xl items-start w-[60%]">
+          <span className="h2-6 text-brand-500">
             Contact <span className="text-brand-900">Us</span>
           </span>
 
@@ -41,7 +41,7 @@ export const ContactUsSection = memo(function ContactUsSection() {
           >
             <div className="grid grid-cols-2 gap-l">
               <UIInput.Text
-                placeholder="Jane"
+                placeholder="John"
                 label="First Name"
                 required
                 {...register("firstName", {
@@ -51,7 +51,7 @@ export const ContactUsSection = memo(function ContactUsSection() {
               />
 
               <UIInput.Text
-                placeholder="Jane"
+                placeholder="Doe"
                 label="Last Name"
                 required
                 {...register("lastName", {
@@ -65,7 +65,7 @@ export const ContactUsSection = memo(function ContactUsSection() {
               <UIInput.Text
                 label="Email"
                 required
-                placeholder="Jane"
+                placeholder="example@email.com"
                 type="email"
                 {...register("email", {
                   required: "Email is required",
@@ -80,7 +80,7 @@ export const ContactUsSection = memo(function ContactUsSection() {
               <UIInput.Text
                 label="Phone number"
                 required
-                placeholder="Jane"
+                placeholder="(+61) 123456789"
                 type="tel"
                 {...register("phoneNumber", {
                   required: "Phone number is required",
@@ -100,6 +100,8 @@ export const ContactUsSection = memo(function ContactUsSection() {
               minHeight="96px"
               {...register("content")}
             />
+
+            <UIButton size="L" fullWidth color="primary" title="Submit" />
           </form>
         </div>
       </div>

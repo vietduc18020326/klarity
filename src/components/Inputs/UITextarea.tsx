@@ -26,7 +26,7 @@ export const UITextarea = ({
       ) : null}
       <textarea
         placeholder={placeholder}
-        className={`py-s px-m text-grey-900 bg-grey-25 rounded border border-transparent focus:outline-none focus:border-brand-500 focus:border-1 transition-colors ${className}`}
+        className={`py-s px-m text-grey-900 bg-white rounded-2 border border-grey-100 focus:outline-none focus:border-brand-500 focus:border-1 transition-colors ${className}`}
         style={{ minHeight }}
         {...props}
       />

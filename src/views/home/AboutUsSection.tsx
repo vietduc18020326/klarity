@@ -8,7 +8,7 @@ import { memo } from "react";
 export const AboutUsSection = memo(function AboutUsSection() {
   return (
     <section
-      className="w-full h-[70vh] bg-red-400 items-center justify-center flex relative bg-cover"
+      className="w-full h-[100vh] bg-red-400 items-center justify-center flex relative bg-cover"
       style={{
         backgroundImage: `url(${IMAGE_BUILDING_3})`,
       }}
@@ -22,10 +22,10 @@ export const AboutUsSection = memo(function AboutUsSection() {
       />
 
       <div className="max-w-content gap-3xl flex flex-row inset-1 z-[1] items-center">
-        <div className="flex-1 flex flex-col gap-2xl items-start">
+        <div className="flex-1 flex flex-col gap-l items-start">
           <h1 className="h1-6 text-white">About Us</h1>
 
-          <h3 className="h3-6 text-white">
+          <h3 className="h3-4 text-white">
             The Klarity suite operates on a software-as-a-service basis, with
             secure cloud-hosted platforms that users can access with any
             internet-capable device. 
@@ -48,12 +48,12 @@ export const AboutUsSection = memo(function AboutUsSection() {
               boxShadow: "0px 0px 90px 0px rgba(12, 111, 255, 0.12)",
             }}
           >
-            <p className="b3-4 text-black">
+            <h5 className="h5-4 text-black">
               Klarity has been developed by futuristic technology developers
               KangaSys combining their expertise to create tools that help
               manage energy demand, enhance occupant comfort, reduce water
               consumption and monitor and minimise carbon emissions.
-            </p>
+            </h5>
           </div>
         </div>
       </div>

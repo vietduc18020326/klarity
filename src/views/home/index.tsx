@@ -1,18 +1,18 @@
 "use client";
 
-import { UIButton } from "@/components";
+import { ContactUsSection, Spacing, UIButton } from "@/components";
 import { AboutUsSection } from "./AboutUsSection";
-import { ContactUsSection } from "./ContactUsSection";
 import { CoreSolutionsSection } from "./CoreSolutionsSection";
 import { EmpoweringSection } from "./EmpoweringSection";
 import { HeroSection } from "./HeroSection";
 import { OurProductSection } from "./OurProductSection";
-import { TeamIntroSection } from "./TeamIntroSection";
 
 const HomePage = function HomePage() {
   return (
     <div className="flex flex-col w-full">
       <HeroSection />
+
+      <Spacing />
 
       <section className="py-4xl px-l w-full bg-brand-500 relative items-center flex justify-center">
         <div className="relative z-1 gap-l items-center flex flex-col max-w-content justify-center">
@@ -28,23 +28,23 @@ const HomePage = function HomePage() {
         </div>
       </section>
 
+      <Spacing />
+
       <EmpoweringSection />
+
+      <Spacing />
 
       <OurProductSection />
 
-      <TeamIntroSection />
+      <Spacing />
 
       <AboutUsSection />
 
+      <Spacing />
+
       <CoreSolutionsSection />
 
-      <section className="w-full py-3xl px-l flex items-center justify-center">
-        <div className="w-content items-center flex flex-col gap-2xl">
-          <span className="h2-6 text-brand-600">
-            Verified & <span className="text-brand-900">Accredited by</span>
-          </span>
-        </div>
-      </section>
+      <Spacing />
 
       <ContactUsSection />
     </div>

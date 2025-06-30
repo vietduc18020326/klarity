@@ -1,10 +1,19 @@
-import { IMAGE_BG_HERO, IMAGE_DASHBOARD } from "@/assets";
+import {
+  IMAGE_BG_HERO,
+  IMAGE_DASHBOARD,
+  IMAGE_LOGO_CLIMATE_ACTIVE,
+  IMAGE_LOGO_GREEN_STAR,
+  IMAGE_LOGO_GRESB,
+  IMAGE_LOGO_LEED,
+  IMAGE_LOGO_NABERS,
+  IMAGE_LOGO_WELL,
+} from "@/assets";
 import { UIButton } from "@/components";
 import { ArrowCircleRightIcon } from "@phosphor-icons/react";
 
 export const HeroSection = function HeroSection() {
   return (
-    <section className="relative py-3xl px-l flex items-center justify-center overflow-hidden">
+    <section className="relative py-3xl px-l flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute left-0 right-0 top-0 -z-1">
         <img
           alt="bg-hero"
@@ -23,7 +32,7 @@ export const HeroSection = function HeroSection() {
             </span>
           </span>
 
-          <h4 className="text-center h4-4 text-grey-400 w-[888px]">
+          <h4 className="text-center h4-4 text-grey-600 w-[80%]">
             Achieving high performance, low carbon and resource-efficient
             buildings and tenancies is no longer just nice to have – it is an
             essential strategy for future-proofing value and reputation.
@@ -47,6 +56,52 @@ export const HeroSection = function HeroSection() {
           src={IMAGE_DASHBOARD}
           className="aspect-[1280/612] w-[90vw]"
         />
+      </div>
+
+      <div className="w-[80vw] py-3xl px-l flex items-center justify-center">
+        <div className="items-center flex flex-col gap-2xl ">
+          <span className="h2-6 text-brand-500">
+            Verified & <span className="text-brand-900">Accredited by</span>
+          </span>
+
+          <div className="flex flex-row gap-3xl items-center w-full flex-wrap justify-center">
+            <img
+              src={IMAGE_LOGO_GRESB}
+              alt="benchmark"
+              className="h-[6vh] aspect-auto"
+            />
+
+            <img
+              src={IMAGE_LOGO_NABERS}
+              alt="benchmark"
+              className="h-[5.5vh] aspect-auto"
+            />
+
+            <img
+              src={IMAGE_LOGO_GREEN_STAR}
+              alt="benchmark"
+              className="h-[5vh] aspect-auto"
+            />
+
+            <img
+              src={IMAGE_LOGO_CLIMATE_ACTIVE}
+              alt="benchmark"
+              className="h-[7.5vh] aspect-auto"
+            />
+
+            <img
+              src={IMAGE_LOGO_LEED}
+              alt="benchmark"
+              className="h-[7.5vh] aspect-auto"
+            />
+
+            <img
+              src={IMAGE_LOGO_WELL}
+              alt="benchmark"
+              className="h-[7.5vh] aspect-auto"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

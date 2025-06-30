@@ -29,14 +29,14 @@ export const UITextInput = memoForwardRef(function UITextInput(
       )}
       <input
         ref={ref}
-        className={`py-s px-m rounded b3-4 bg-white text-grey-900 border border-transparent ${
+        className={`py-s px-m rounded-2 b3-4 bg-white text-grey-900 border border-grey-100 ${
           error ? "border-red-500" : "border-grey-300"
         } focus:outline-none focus:border-brand-500 focus:border-1 transition-colors ${className}`}
         {...props}
       />
       {error && <span className="text-red-500 text-sm">{error}</span>}
       {helperText && (
-        <span className="text-grey-500 text-sm">{helperText}</span>
+        <span className="text-grey-600 text-sm">{helperText}</span>
       )}
     </div>
   );

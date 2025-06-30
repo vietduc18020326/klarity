@@ -16,13 +16,14 @@ export const OurProductSection = memo(function OurProductSection() {
           </span>
         </div>
 
-        <div className="flex flex-col w-full gap-2xl items-center justify-center">
+        <div className="flex flex-col w-full gap-l items-center justify-center">
           {DUMMY_PRODUCTS.HOME.map((list, i) => (
-            <ul className="flex flex-row gap-2xl" key={i.toString()}>
+            <ul
+              className="flex flex-row gap-l w-full justify-center items-stretch"
+              key={i.toString()}
+            >
               {list.map((item, index) => (
-                <li key={index.toString() + item.title}>
-                  <ProductCard {...item} />
-                </li>
+                <ProductCard {...item} key={index.toString() + item.title} />
               ))}
             </ul>
           ))}

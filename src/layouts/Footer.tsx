@@ -18,7 +18,7 @@ export const Footer = memo(function Footer() {
   return (
     <footer className="w-full py-3xl px-l bg-brand-900 flex items-center justify-center">
       <div className="w-content flex flex-col gap-3xl">
-        <div className="flex flex-row rounded-3 bg-brand-600 p-m items-center justify-between">
+        <div className="flex flex-row rounded-3 bg-brand-600 pt-m pb-m pr-m pl-l items-center justify-between">
           <h2 className="text-white h3-6">Have You got Klarity?</h2>
 
           <UIButton
@@ -28,7 +28,7 @@ export const Footer = memo(function Footer() {
             RightComp={
               <ArrowCircleRightIcon
                 weight="fill"
-                className="text-brand-600 w-6 h-6"
+                className="text-brand-500 w-l h-l"
               />
             }
           />
@@ -71,18 +71,18 @@ export const Footer = memo(function Footer() {
 
               <ul className="flex flex-col gap-s w-full">
                 <Link href="#" className="flex flex-row gap-m items-center">
-                  <EnvelopeSimpleIcon className="text-secondary-25 w-7 h-7" />
-                  <p className="!b3-4 text-white">contact@klarity.com</p>
+                  <EnvelopeSimpleIcon className="text-secondary-25 w-l h-l" />
+                  <p className="!b3-4 text-white flex-1">contact@klarity.com</p>
                 </Link>
                 <Link href="#" className="flex flex-row gap-m items-center">
-                  <MapPinIcon className="text-secondary-25 w-7 h-7" />
-                  <p className="b3-4 text-white">
+                  <MapPinIcon className="text-secondary-25 w-l h-l" />
+                  <p className="b3-4 text-white flex-1">
                     123 Eco Lane, Green City, GA 30301
                   </p>
                 </Link>
                 <Link href="#" className="flex flex-row gap-m items-center">
-                  <PhoneIcon className="text-secondary-25 w-7 h-7" />
-                  <p className="b3-4 text-white">(555) 123-4567</p>
+                  <PhoneIcon className="text-secondary-25 w-l h-l" />
+                  <p className="b3-4 text-white flex-1">(555) 123-4567</p>
                 </Link>
               </ul>
             </div>

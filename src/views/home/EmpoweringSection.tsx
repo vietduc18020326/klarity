@@ -52,7 +52,7 @@ export const EmpoweringSection = memo(function EmpoweringSection() {
               </span>
             </span>
 
-            <p className="text-grey-400 b3-4">
+            <p className="text-grey-600 b3-4">
               Klarity provides real-time data and critical insights through
               intuitive dashboards, tailored for fund managers, property
               professionals, and commercial tenants
@@ -68,11 +68,12 @@ export const EmpoweringSection = memo(function EmpoweringSection() {
 
         <div className="flex flex-row w-full gap-4xl">
           <div className="flex-1 flex flex-col gap-l pr-xl">
-            <h2 className="h2-6 text-brand-600">
-              Visibility of key operational metrics
-            </h2>
+            <span className="h2-6 text-brand-900">
+              Visibility of key{" "}
+              <span className="text-brand-500">operational metrics</span>
+            </span>
 
-            <p className="b3-4 text-grey-400">
+            <p className="b3-4 text-grey-600">
               Klarity gives you visibility of key operational metrics - energy,
               water, emissions, waste and other data, including relevant ratings
               and benchmarks.
@@ -82,27 +83,27 @@ export const EmpoweringSection = memo(function EmpoweringSection() {
               <li className="flex flex-row gap-m items-center">
                 <LightningIcon
                   weight="fill"
-                  className="text-brand-600 w-6 h-6"
+                  className="text-brand-500 w-6 h-6"
                 />
-                <p className="b3-4 text-grey-400">Energy</p>
+                <p className="b3-4 text-grey-600">Energy</p>
               </li>
 
               <li className="flex flex-row gap-m items-center">
-                <DropIcon weight="fill" className="text-brand-600 w-6 h-6" />
-                <p className="b3-4 text-grey-400">Water</p>
+                <DropIcon weight="fill" className="text-brand-500 w-6 h-6" />
+                <p className="b3-4 text-grey-600">Water</p>
               </li>
 
               <li className="flex flex-row gap-m items-center">
-                <GasPumpIcon weight="fill" className="text-brand-600 w-6 h-6" />
-                <p className="b3-4 text-grey-400">Emissions</p>
+                <GasPumpIcon weight="fill" className="text-brand-500 w-6 h-6" />
+                <p className="b3-4 text-grey-600">Emissions</p>
               </li>
 
               <li className="flex flex-row gap-m items-center">
                 <ChartBarIcon
                   weight="fill"
-                  className="text-brand-600 w-6 h-6"
+                  className="text-brand-500 w-6 h-6"
                 />
-                <p className="b3-4 text-grey-400">
+                <p className="b3-4 text-grey-600">
                   Other data (including relevant ratings and benmarks)
                 </p>
               </li>
