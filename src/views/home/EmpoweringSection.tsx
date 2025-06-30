@@ -1,11 +1,14 @@
-import { IMAGE_BUILDING_1, IMAGE_CHATTERING_ALARMS } from "@/assets";
+import {
+  IMAGE_BUILDING_1,
+  IMAGE_BUILDING_2,
+  IMAGE_CHATTERING_ALARMS,
+} from "@/assets";
+import { Badge } from "@/components";
+import { DUMMY_BADGES } from "@/dummy";
 import {
   BuildingIcon,
   ChartBarIcon,
   DatabaseIcon,
-  DropIcon,
-  GasPumpIcon,
-  LightningIcon,
 } from "@phosphor-icons/react";
 import { memo } from "react";
 
@@ -41,10 +44,12 @@ export const EmpoweringSection = memo(function EmpoweringSection() {
           </div>
 
           <div className="flex-1 items-start justify-center flex flex-col gap-l pl-xl">
-            <h2 className="h2-6 text-brand-900">
-              Empowering sustainability with real-time data and insights for
-              property management
-            </h2>
+            <span className="h2-6 text-brand-500">
+              Empowering sustainability{" "}
+              <span className="text-brand-900">
+                with real-time data and insights for property management
+              </span>
+            </span>
 
             <p className="text-grey-400 b3-4">
               Klarity provides real-time data and critical insights through
@@ -84,39 +89,21 @@ export const EmpoweringSection = memo(function EmpoweringSection() {
             </p>
 
             <ul className="w-full flex flex-col gap-m">
-              <li className="flex flex-row gap-m items-center">
-                <LightningIcon
-                  weight="fill"
-                  className="text-brand-600 w-6 h-6"
-                />
-                <p className="b3-4 text-grey-400">Energy</p>
-              </li>
-
-              <li className="flex flex-row gap-m items-center">
-                <DropIcon weight="fill" className="text-brand-600 w-6 h-6" />
-                <p className="b3-4 text-grey-400">Water</p>
-              </li>
-
-              <li className="flex flex-row gap-m items-center">
-                <GasPumpIcon weight="fill" className="text-brand-600 w-6 h-6" />
-                <p className="b3-4 text-grey-400">Emissions</p>
-              </li>
-
-              <li className="flex flex-row gap-m items-center">
-                <ChartBarIcon
-                  weight="fill"
-                  className="text-brand-600 w-6 h-6"
-                />
-                <p className="b3-4 text-grey-400">
-                  Other data (including relevant ratings and benmarks)
-                </p>
-              </li>
+              {DUMMY_BADGES.EMPOWERING.map((badge, index) => (
+                <Badge key={index} {...badge} />
+              ))}
             </ul>
           </div>
 
-          <div className="flex-1 flex h-[480px] bg-red-300 items-end justify-end pl-xl">
+          <div className="flex-1 flex h-[480px] items-end justify-end pl-xl">
             <div className="h-full rounded-[18px] bg-brand-900 p-5">
-              <div className="w-[440px] h-full rounded-[14px] bg-brand-25"></div>
+              <div className="w-[440px] h-full rounded-[14px] bg-brand-25">
+                <img
+                  alt="building_2"
+                  src={IMAGE_BUILDING_2}
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>

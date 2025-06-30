@@ -39,7 +39,8 @@ export const ProductCard = memo(function ProductCard({
           size="L"
           color="border"
           title="Learn More"
-          RightComp={<ArrowCircleRightIcon />}
+          fullWidth
+          RightComp={<ArrowCircleRightIcon weight="fill" className="w-6 h-6" />}
         />
       </div>
     </div>

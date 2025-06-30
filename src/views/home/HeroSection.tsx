@@ -1,4 +1,4 @@
-import { IMAGE_BG_HERO } from "@/assets";
+import { IMAGE_BG_HERO, IMAGE_DASHBOARD } from "@/assets";
 import { UIButton } from "@/components";
 import { ArrowCircleRightIcon } from "@phosphor-icons/react";
 
@@ -30,7 +30,7 @@ export const HeroSection = function HeroSection() {
           </h4>
 
           <UIButton
-            size="M"
+            size="L"
             color="primary"
             title="Get Klarity"
             RightComp={
@@ -42,7 +42,11 @@ export const HeroSection = function HeroSection() {
           />
         </div>
 
-        <div className="w-full h-[623px] bg-red-200"></div>
+        <img
+          alt="dashboard"
+          src={IMAGE_DASHBOARD}
+          className="aspect-[1280/612] w-full"
+        />
       </div>
     </section>
   );

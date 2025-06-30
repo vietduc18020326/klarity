@@ -1,6 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
+import { Footer } from "./Footer";
 
 export const CustomLayout = function CustomLayout({
   children,
@@ -10,6 +11,8 @@ export const CustomLayout = function CustomLayout({
   return (
     <div id="root-container" className="bg-white">
       <main>{children}</main>
+
+      <Footer />
     </div>
   );
 };

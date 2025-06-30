@@ -32,11 +32,11 @@ export const UIButton = memo(function UIButton({
   const sizeClassName = useMemo(() => {
     switch (size) {
       case "L":
-        return "p-s b2-6";
+        return "py-m px-l b3-6";
       case "M":
-        return "py-xs px-s b1-6";
+        return "py-s px-m b3-6";
       case "S":
-        return "py-xs px-s b1-6";
+        return "py-xs px-m b3-6";
       default:
         return "";
     }
@@ -51,7 +51,7 @@ export const UIButton = memo(function UIButton({
       case "bg-white":
         return "bg-white text-brand-500";
       case "secondary":
-        return "bg-grey-900 text-white";
+        return "bg-brand-25 border border-brand-600 text-brand-600 !h3-6";
       case "disable":
         return "bg-grey-200 text-white cursor-not-allowed";
       default:
@@ -64,7 +64,7 @@ export const UIButton = memo(function UIButton({
       <Link
         href={path}
         className={clsx(
-          `gap-s rounded-[4px] flex flex-row items-center justify-center relative uppercase ${fullWidth ? "w-full" : "w-fit"}`,
+          `gap-s rounded-3 flex flex-row items-center justify-center relative uppercase ${fullWidth ? "w-full" : "w-fit"}`,
           sizeClassName,
           typeClassName,
           className
@@ -83,7 +83,7 @@ export const UIButton = memo(function UIButton({
   return (
     <button
       className={clsx(
-        `gap-s rounded-[4px] flex flex-row items-center relative justify-center uppercase ${fullWidth ? "w-full" : "w-fit"}`,
+        `gap-s rounded-3 flex flex-row items-center relative justify-center uppercase ${fullWidth ? "w-full" : "w-fit"}`,
         sizeClassName,
         typeClassName,
         className
