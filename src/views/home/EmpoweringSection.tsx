@@ -6,9 +6,10 @@ import {
 import { Badge } from "@/components";
 import { DUMMY_BADGES } from "@/dummy";
 import {
-  BuildingIcon,
   ChartBarIcon,
-  DatabaseIcon,
+  DropIcon,
+  GasPumpIcon,
+  LightningIcon,
 } from "@phosphor-icons/react";
 import { memo } from "react";
 
@@ -58,20 +59,9 @@ export const EmpoweringSection = memo(function EmpoweringSection() {
             </p>
 
             <div className="flex flex-row gap-xs">
-              <div className="gap-xs flex flex-row items-center bg-brand-25 rounded-full px-m py-xs">
-                <DatabaseIcon className="text-brand-600 w-6 h-6" />
-                <span className="b3-4 text-brand-600">Data</span>
-              </div>
-
-              <div className="gap-xs flex flex-row items-center bg-brand-25 rounded-full px-m py-xs">
-                <ChartBarIcon className="text-brand-600 w-6 h-6" />
-                <span className="b3-4 text-brand-600">Dashboards</span>
-              </div>
-
-              <div className="gap-xs flex flex-row items-center bg-brand-25 rounded-full px-m py-xs">
-                <BuildingIcon className="text-brand-600 w-6 h-6" />
-                <span className="b3-4 text-brand-600">Tenants</span>
-              </div>
+              {DUMMY_BADGES.EMPOWERING.map((badge, index) => (
+                <Badge key={index} {...badge} />
+              ))}
             </div>
           </div>
         </div>
@@ -89,9 +79,33 @@ export const EmpoweringSection = memo(function EmpoweringSection() {
             </p>
 
             <ul className="w-full flex flex-col gap-m">
-              {DUMMY_BADGES.EMPOWERING.map((badge, index) => (
-                <Badge key={index} {...badge} />
-              ))}
+              <li className="flex flex-row gap-m items-center">
+                <LightningIcon
+                  weight="fill"
+                  className="text-brand-600 w-6 h-6"
+                />
+                <p className="b3-4 text-grey-400">Energy</p>
+              </li>
+
+              <li className="flex flex-row gap-m items-center">
+                <DropIcon weight="fill" className="text-brand-600 w-6 h-6" />
+                <p className="b3-4 text-grey-400">Water</p>
+              </li>
+
+              <li className="flex flex-row gap-m items-center">
+                <GasPumpIcon weight="fill" className="text-brand-600 w-6 h-6" />
+                <p className="b3-4 text-grey-400">Emissions</p>
+              </li>
+
+              <li className="flex flex-row gap-m items-center">
+                <ChartBarIcon
+                  weight="fill"
+                  className="text-brand-600 w-6 h-6"
+                />
+                <p className="b3-4 text-grey-400">
+                  Other data (including relevant ratings and benmarks)
+                </p>
+              </li>
             </ul>
           </div>
 
