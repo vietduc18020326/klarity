@@ -19,7 +19,7 @@ export const Footer = memo(function Footer() {
     <footer className="w-full py-3xl px-l bg-brand-900 flex items-center justify-center">
       <div className="w-content flex flex-col gap-3xl">
         <div className="flex flex-row rounded-3 bg-brand-600 p-m items-center justify-between">
-          <h2 className="text-white h2-6">Have You got Klarity ?</h2>
+          <h2 className="text-white h3-6">Have You got Klarity?</h2>
 
           <UIButton
             size="L"

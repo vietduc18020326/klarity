@@ -13,8 +13,8 @@ export const HeroSection = function HeroSection() {
         />
       </div>
 
-      <div className="z-1 relative text-black flex-1 max-w-content flex flex-col gap-3xl">
-        <div className="flex flex-col gap-2xl items-center">
+      <div className="z-1 relative text-black flex-1 flex flex-col gap-3xl items-center">
+        <div className="max-w-content flex flex-col gap-l items-center mx-auto">
           <span className="h1-7 text-brand-500 text-center">
             Data dashboards, real-time performance insights and streamlined
             reporting{" "}
@@ -45,7 +45,7 @@ export const HeroSection = function HeroSection() {
         <img
           alt="dashboard"
           src={IMAGE_DASHBOARD}
-          className="aspect-[1280/612] w-full"
+          className="aspect-[1280/612] w-[90vw]"
         />
       </div>
     </section>

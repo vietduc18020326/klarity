@@ -17,7 +17,7 @@ export const ProductCard = memo(function ProductCard({
 }: Props) {
   return (
     <div
-      className="w-[405px] rounded-2 border border-brand-600"
+      className="w-[405px] rounded-3 border border-brand-600"
       style={{
         boxShadow: "0px 0px 90px 0px rgba(12, 111, 255, 0.12)",
       }}
@@ -30,17 +30,19 @@ export const ProductCard = memo(function ProductCard({
 
       <div className="p-l flex flex-col gap-5 w-full rounded-bl-2 rounded-br-2">
         <div className="flex flex-col gap-xs">
-          <p className="b3-6 text-brand-900">{subTitle}</p>
+          <p className="b3-5 text-grey-600">{subTitle}</p>
 
-          <p className="b3-6 text-grey-400 line-clamp-3">{description}</p>
+          <p className="b3-4 text-grey-500 line-clamp-3">{description}</p>
         </div>
 
         <UIButton
-          size="L"
+          size="M"
           color="border"
           title="Learn More"
           fullWidth
-          RightComp={<ArrowCircleRightIcon weight="fill" className="w-6 h-6" />}
+          RightComp={
+            <ArrowCircleRightIcon weight="fill" className="w-l h-l" />
+          }
         />
       </div>
     </div>

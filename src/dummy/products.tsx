@@ -13,7 +13,7 @@ const HOME = [
     {
       title: "KanSustain",
       LeadingIcon: (
-        <LeafIcon weight="fill" className="text-brand-500 w-8 h-8" />
+        <LeafIcon weight="fill" className="text-brand-500 w-l h-l" />
       ),
       subTitle: "Quick insights on energy, water, waste, and emissions.",
       description:
@@ -22,7 +22,7 @@ const HOME = [
     {
       title: "KanPerform",
       LeadingIcon: (
-        <LightbulbIcon weight="fill" className="text-brand-500 w-8 h-8" />
+        <LightbulbIcon weight="fill" className="text-brand-500 w-l h-l" />
       ),
       subTitle: "Data for energy, water, and consumption trends.",
       description:
@@ -33,7 +33,7 @@ const HOME = [
     {
       title: "KanEngage",
       LeadingIcon: (
-        <ChartBarIcon weight="fill" className="text-brand-500 w-8 h-8" />
+        <ChartBarIcon weight="fill" className="text-brand-500 w-l h-l" />
       ),
       subTitle: "Transparent benchmarking for energy and water.",
       description:
@@ -42,7 +42,7 @@ const HOME = [
     {
       title: "KanReport",
       LeadingIcon: (
-        <FilesIcon weight="fill" className="text-brand-500 w-8 h-8" />
+        <FilesIcon weight="fill" className="text-brand-500 w-l h-l" />
       ),
       subTitle: "Simplify energy and emissions reporting.",
       description:
@@ -51,7 +51,7 @@ const HOME = [
     {
       title: "KanCompare",
       LeadingIcon: (
-        <MagnifyingGlassIcon weight="fill" className="text-brand-500 w-8 h-8" />
+        <MagnifyingGlassIcon weight="fill" className="text-brand-500 w-l h-l" />
       ),
       subTitle: "Compare asset performance effectively.",
       description:
@@ -62,7 +62,7 @@ const HOME = [
     {
       title: "KanZero",
       LeadingIcon: (
-        <FootprintsIcon weight="fill" className="text-brand-500 w-8 h-8" />
+        <FootprintsIcon weight="fill" className="text-brand-500 w-l h-l" />
       ),
       subTitle: "Track decarbonization progress easily.",
       description:
@@ -71,7 +71,7 @@ const HOME = [
     {
       title: "KanAlert",
       LeadingIcon: (
-        <WarningIcon weight="fill" className="text-brand-500 w-8 h-8" />
+        <WarningIcon weight="fill" className="text-brand-500 w-l h-l" />
       ),
       subTitle: "Predict and fix energy and equipment issues.",
       description:

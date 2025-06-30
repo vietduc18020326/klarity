@@ -43,7 +43,7 @@ export const AboutUsSection = memo(function AboutUsSection() {
 
         <div className="flex-1">
           <div
-            className="w-full p-l rounded-2 border border-secondary-25 bg-white/40 h-fit backdrop-blur-[20px]"
+            className="w-full p-l rounded-3 border border-secondary-25 bg-white/40 h-fit backdrop-blur-[20px]"
             style={{
               boxShadow: "0px 0px 90px 0px rgba(12, 111, 255, 0.12)",
             }}
