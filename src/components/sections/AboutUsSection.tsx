@@ -5,10 +5,16 @@ import { UIButton } from "@/components";
 import { ArrowCircleRightIcon } from "@phosphor-icons/react";
 import { memo } from "react";
 
-export const AboutUsSection = memo(function AboutUsSection() {
+interface Props {
+  hideButton?: boolean;
+}
+
+export const AboutUsSection = memo(function AboutUsSection({
+  hideButton = false,
+}: Props) {
   return (
     <section
-      className="w-full h-[100vh] bg-red-400 items-center justify-center flex relative bg-cover"
+      className="w-full h-[100vh] items-center justify-center flex relative bg-cover"
       style={{
         backgroundImage: `url(${IMAGE_BUILDING_3})`,
       }}
@@ -31,14 +37,17 @@ export const AboutUsSection = memo(function AboutUsSection() {
             internet-capable device. 
           </h3>
 
-          <UIButton
-            size="L"
-            color="primary"
-            title="Read More"
-            RightComp={
-              <ArrowCircleRightIcon weight="fill" className="w-6 h-6" />
-            }
-          />
+          {hideButton ? null : (
+            <UIButton
+              size="L"
+              color="primary"
+              title="Read More"
+              RightComp={
+                <ArrowCircleRightIcon weight="fill" className="w-6 h-6" />
+              }
+              path="/about-us"
+            />
+          )}
         </div>
 
         <div className="flex-1">

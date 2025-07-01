@@ -3,12 +3,14 @@ import {
   IMAGE_BUILDING_2,
   IMAGE_CHATTERING_ALARMS,
 } from "@/assets";
-import { Badge } from "@/components";
+import { Badge, MetricBadge } from "@/components";
 import { DUMMY_BADGES } from "@/dummy";
 import {
   ChartBarIcon,
   DropIcon,
+  FireSimpleIcon,
   GasPumpIcon,
+  LeafIcon,
   LightningIcon,
 } from "@phosphor-icons/react";
 import { memo } from "react";
@@ -110,7 +112,7 @@ export const EmpoweringSection = memo(function EmpoweringSection() {
             </ul>
           </div>
 
-          <div className="flex-1 flex h-[480px] items-end justify-end pl-xl">
+          <div className="flex-1 relative flex h-[480px] items-end justify-end pl-xl">
             <div className="h-full rounded-[18px] bg-brand-900 p-5">
               <div className="w-[440px] h-full rounded-[14px] bg-brand-25">
                 <img
@@ -120,6 +122,27 @@ export const EmpoweringSection = memo(function EmpoweringSection() {
                 />
               </div>
             </div>
+
+            <MetricBadge
+              color="green"
+              value="Emissions: 89.6 t CO₂e in Q2."
+              LeadingIcon={LeafIcon}
+              className="absolute top-[10%] left-0"
+            />
+
+            <MetricBadge
+              color="red"
+              value="Energy: 87 kWh/m², up 9% efficiency."
+              LeadingIcon={FireSimpleIcon}
+              className="absolute top-1/2 right-[15%]"
+            />
+
+            <MetricBadge
+              color="blue"
+              value="Water use: 12,500 m³, down 5% MoM."
+              LeadingIcon={DropIcon}
+              className="absolute bottom-[10%] -right-[5%]"
+            />
           </div>
         </div>
       </div>

@@ -1,9 +1,13 @@
 "use client";
 
-import { ContactUsSection, Spacing, UIButton } from "@/components";
-import { AboutUsSection } from "./AboutUsSection";
-import { CoreSolutionsSection } from "./CoreSolutionsSection";
-import { EmpoweringSection } from "./EmpoweringSection";
+import {
+  AboutUsSection,
+  ContactUsSection,
+  CoreSolutionsSection,
+  Spacing,
+  UIButton,
+} from "@/components";
+import { HOME_ID } from "@/types";
 import { HeroSection } from "./HeroSection";
 import { OurProductSection } from "./OurProductSection";
 
@@ -14,7 +18,10 @@ const HomePage = function HomePage() {
 
       <Spacing />
 
-      <section className="py-4xl px-l w-full bg-brand-500 relative items-center flex justify-center">
+      <section
+        id={HOME_ID.WHY_US}
+        className="py-4xl px-l w-full bg-brand-500 relative items-center flex justify-center"
+      >
         <div className="relative z-1 gap-l items-center flex flex-col max-w-content justify-center">
           <UIButton size="L" color="secondary" title="Why us ?" disabled />
 
@@ -30,7 +37,7 @@ const HomePage = function HomePage() {
 
       <Spacing />
 
-      <EmpoweringSection />
+      {/* <EmpoweringSection /> */}
 
       <Spacing />
 

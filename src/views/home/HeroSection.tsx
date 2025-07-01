@@ -1,19 +1,10 @@
-import {
-  IMAGE_BG_HERO,
-  IMAGE_DASHBOARD,
-  IMAGE_LOGO_CLIMATE_ACTIVE,
-  IMAGE_LOGO_GREEN_STAR,
-  IMAGE_LOGO_GRESB,
-  IMAGE_LOGO_LEED,
-  IMAGE_LOGO_NABERS,
-  IMAGE_LOGO_WELL,
-} from "@/assets";
-import { UIButton } from "@/components";
+import { IMAGE_BG_HERO, IMAGE_DASHBOARD } from "@/assets";
+import { ListLogo, UIButton } from "@/components";
 import { ArrowCircleRightIcon } from "@phosphor-icons/react";
 
 export const HeroSection = function HeroSection() {
   return (
-    <section className="relative py-3xl px-l flex flex-col items-center justify-center overflow-hidden">
+    <section className="relative py-3xl px-l flex flex-col items-center justify-center overflow-hidden mobile:py-xl mobile:px-s">
       <div className="absolute left-0 right-0 top-0 -z-1">
         <img
           alt="bg-hero"
@@ -64,43 +55,7 @@ export const HeroSection = function HeroSection() {
             Verified & <span className="text-brand-900">Accredited by</span>
           </span>
 
-          <div className="flex flex-row gap-3xl items-center w-full flex-wrap justify-center">
-            <img
-              src={IMAGE_LOGO_GRESB}
-              alt="benchmark"
-              className="h-[6vh] aspect-auto"
-            />
-
-            <img
-              src={IMAGE_LOGO_NABERS}
-              alt="benchmark"
-              className="h-[5.5vh] aspect-auto"
-            />
-
-            <img
-              src={IMAGE_LOGO_GREEN_STAR}
-              alt="benchmark"
-              className="h-[5vh] aspect-auto"
-            />
-
-            <img
-              src={IMAGE_LOGO_CLIMATE_ACTIVE}
-              alt="benchmark"
-              className="h-[7.5vh] aspect-auto"
-            />
-
-            <img
-              src={IMAGE_LOGO_LEED}
-              alt="benchmark"
-              className="h-[7.5vh] aspect-auto"
-            />
-
-            <img
-              src={IMAGE_LOGO_WELL}
-              alt="benchmark"
-              className="h-[7.5vh] aspect-auto"
-            />
-          </div>
+          <ListLogo />
         </div>
       </div>
     </section>

@@ -10,6 +10,7 @@ interface Props {
   LeadingIcon: PhosphorIcon;
   subTitle: string;
   description: string;
+  slug: string;
 }
 
 export const ProductCard = memo(function ProductCard({
@@ -17,6 +18,7 @@ export const ProductCard = memo(function ProductCard({
   LeadingIcon,
   subTitle,
   description,
+  slug,
 }: Props) {
   return (
     <div
@@ -53,6 +55,7 @@ export const ProductCard = memo(function ProductCard({
           title="Learn More"
           fullWidth
           RightComp={<ArrowCircleRightIcon weight="fill" className="w-l h-l" />}
+          path={`/products/${slug}`}
         />
       </div>
     </div>
