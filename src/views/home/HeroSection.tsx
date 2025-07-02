@@ -32,7 +32,7 @@ export const HeroSection = function HeroSection() {
           <UIButton
             size="L"
             color="primary"
-            title="Get Klarity"
+            title="Get Klarity Live"
             RightComp={
               <ArrowCircleRightIcon
                 weight="fill"

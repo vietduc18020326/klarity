@@ -9,9 +9,9 @@ export const OurProductSection = memo(function OurProductSection() {
         <div className="flex flex-col gap-l px-xl items-center justify-center w-full">
           <UIButton size="L" color="secondary" title="Our Products" disabled />
           <span className="h1-6 text-brand-600 whitespace-pre-line text-center">
-            What you measure, you can manage,{`\n`}
+          What you measure, you can manage.{`\n`}
             <span className="text-brand-900">
-              and what you can see, you can take action on.
+            What you see, you can improve.
             </span>
           </span>
         </div>

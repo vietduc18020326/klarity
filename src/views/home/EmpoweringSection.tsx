@@ -55,7 +55,7 @@ export const EmpoweringSection = memo(function EmpoweringSection() {
             </span>
 
             <p className="text-grey-600 b3-4">
-              Klarity provides real-time data and critical insights through
+              Klarity Live provides real-time data and critical insights through
               intuitive dashboards, tailored for fund managers, property
               professionals, and commercial tenants
             </p>
@@ -76,7 +76,7 @@ export const EmpoweringSection = memo(function EmpoweringSection() {
             </span>
 
             <p className="b3-4 text-grey-600">
-              Klarity gives you visibility of key operational metrics - energy,
+              Klarity Live gives you visibility of key operational metrics - energy,
               water, emissions, waste and other data, including relevant ratings
               and benchmarks.
             </p>

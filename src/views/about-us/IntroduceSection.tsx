@@ -10,9 +10,9 @@ export const IntroduceSection = memo(function IntroduceSection() {
         <div className="flex flex-col gap-2xl items-center">
           <UIButton size="L" color="secondary" title="Our experts" disabled />
 
-          <span className="h1-6 text-brand-500">
-            Introduce to{" "}
-            <span className="text-brand-900">Geronimo Advisory’s team</span>
+          <span className="h1-6 text-brand-900">
+            Introducing{" "}
+            <span className="text-brand-500">Geronimo Advisory</span>
           </span>
         </div>
 

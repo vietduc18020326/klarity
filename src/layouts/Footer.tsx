@@ -19,7 +19,7 @@ export const Footer = memo(function Footer() {
     <footer className="w-full py-3xl px-l bg-brand-900 flex items-center justify-center">
       <div className="w-content flex flex-col gap-3xl">
         <div className="flex flex-row rounded-3 bg-brand-600 pt-m pb-m pr-m pl-l items-center justify-between">
-          <h2 className="text-white h3-6">Have You got Klarity?</h2>
+          <h2 className="text-white h3-6">Have You got Klarity Live?</h2>
 
           <UIButton
             size="L"
@@ -36,11 +36,11 @@ export const Footer = memo(function Footer() {
 
         <div className="w-full flex flex-row gap-3xl items-start">
           <div className="flex flex-col items-start gap-m flex-1">
-            <h3 className="text-white h3-7">Klarity</h3>
+            <h3 className="text-white h3-7">Klarity Live</h3>
 
             <p className="b3-4 text-white">
-              Lorem ipsum dolor sit amet consectetur. Laoreet sed felis sed at
-              amet est at in sed.
+              Data dashboards, real-time performance insights and streamlined
+              reporting for sustainable buildings, portfolios and funds.
             </p>
 
             <ListSocialsLinks />
@@ -93,7 +93,7 @@ export const Footer = memo(function Footer() {
 
         <div className="flex flex-row w-full justify-between items-center pt-6">
           <p className="b3-4 text-white">
-            © 2025 Klarity. All rights reverved
+            © 2025 KangaSys. All rights reverved
           </p>
 
           <div className="flex flex-row gap-4 items-center">
@@ -114,13 +114,13 @@ export const Footer = memo(function Footer() {
 const ListSocialsLinks = memo(function ListSocialsLinks() {
   return (
     <div className="flex flex-row gap-m">
-      <YoutubeLogoIcon className="text-white w-8 h-8" weight="fill" />
+      <YoutubeLogoIcon className="text-white w-2xl h-2xl" weight="fill" />
 
-      <LinkedinLogoIcon className="text-white w-8 h-8" weight="fill" />
+      <LinkedinLogoIcon className="text-white w-2xl h-2xl" weight="fill" />
 
-      <FacebookLogoIcon className="text-white w-8 h-8" weight="fill" />
+      <FacebookLogoIcon className="text-white w-2xl h-2xl" weight="fill" />
 
-      <InstagramLogoIcon className="text-white w-8 h-8" weight="fill" />
+      <InstagramLogoIcon className="text-white w-2xl h-2xl" weight="fill" />
     </div>
   );
 });

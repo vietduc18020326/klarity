@@ -25,17 +25,12 @@ const HomePage = function HomePage() {
         <div className="relative z-1 gap-l items-center flex flex-col max-w-content justify-center">
           <UIButton size="L" color="secondary" title="Why us ?" disabled />
 
-          <span className="text-center h1-6 text-brand-200">
+          <span className="text-center h1-6 text-white">
             Evidence is key and data is critical, both for making effective
-            decisions and{" "}
-            <span className="text-white">
-              for engaging with stakeholders and regulators
-            </span>
+            decisions and for engaging with stakeholders and regulators
           </span>
         </div>
       </section>
-
-      <Spacing />
 
       {/* <EmpoweringSection /> */}
 
@@ -46,10 +41,6 @@ const HomePage = function HomePage() {
       <Spacing />
 
       <AboutUsSection />
-
-      <Spacing />
-
-      <CoreSolutionsSection />
 
       <Spacing />
 

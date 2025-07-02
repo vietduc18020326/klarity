@@ -17,7 +17,7 @@ export const ExpertsSection = memo(function ExpertsSection() {
 
         <div className="flex-1 pt-m pr-l flex flex-col gap-2xl items-start">
           <h1 className="h1-6 text-brand-900">
-            Klarity incorporates crucial data experts from Geronimo Advisory.
+            Klarity Live incorporates crucial data experts from Geronimo Advisory.
           </h1>
 
           <h4 className="h4-4 text-grey-600">

@@ -215,7 +215,7 @@ const HOME = [
       slug: PRODUCT_SLUG.KAN_ZERO,
       title: "KanZero",
       LeadingIcon: FootprintsIcon,
-      subTitle: "Track decarbonization progress easily.",
+      subTitle: "Track decarbonisation progress easily.",
       description:
         "Track asset progress for decarbonisation benchmarking current performance against future trajectory, and give a visual snapshot of emissions data, and corresponding carbon price liabilities …",
     },

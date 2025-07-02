@@ -32,8 +32,8 @@ export const AboutUsSection = memo(function AboutUsSection({
           <h1 className="h1-6 text-white">About Us</h1>
 
           <h3 className="h3-4 text-white">
-            The Klarity suite operates on a software-as-a-service basis, with
-            secure cloud-hosted platforms that users can access with any
+            The Klarity Live suite operates on a software-as-a-service basis,
+            with secure cloud-hosted platforms that users can access with any
             internet-capable device. 
           </h3>
 
@@ -58,10 +58,10 @@ export const AboutUsSection = memo(function AboutUsSection({
             }}
           >
             <h5 className="h5-4 text-black">
-              Klarity has been developed by futuristic technology developers
-              KangaSys combining their expertise to create tools that help
-              manage energy demand, enhance occupant comfort, reduce water
-              consumption and monitor and minimise carbon emissions.
+              KangaSys has developed Klarity Live by combining their expertise
+              in modern applications to create tools that manage energy demand,
+              enhance occupant comfort, reduce water consumption, and monitor
+              carbon emissions.
             </h5>
           </div>
         </div>

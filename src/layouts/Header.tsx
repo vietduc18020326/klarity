@@ -56,7 +56,12 @@ export const Header = memo(function Header({
       <div className="flex flex-row w-content items-center justify-between mobile:w-full">
         <div className="flex flex-row items-center gap-3">
           <ListIcon className="hidden mobile:block w-l h-l text-white" />
-          <div className="h-4xl h3-7 text-white">Klarity Live</div>
+          <Link
+            href="/"
+            className="h-4xl h3-7 text-white hover:opacity-80 transition-opacity"
+          >
+            Klarity Live
+          </Link>
         </div>
 
         <div className="flex flex-row h-full mobile:hidden">

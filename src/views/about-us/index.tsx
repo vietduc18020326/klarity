@@ -13,8 +13,8 @@ import { IntroduceSection } from "./IntroduceSection";
 const AboutUsPage = memo(function AboutUsPage() {
   return (
     <div className="flex flex-col w-full">
-      <AboutUsSection hideButton />
       <Spacing />
+      <p className="text-center h1-6 text-brand-900">About us</p>
 
       <CoreSolutionsSection />
 
